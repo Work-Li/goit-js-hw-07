@@ -16,10 +16,11 @@ const images = [
 
 const galleryContainer = document.querySelector('#gallery');
 const string = images.reduce((acc, image) => {
- return acc + `<li><img src = ${image.url} alt = ${image.alt} width = 80% height = 50% /></li>`;
+ return acc + `<li><img src = ${image.url} alt = ${image.alt} width = 350px  height = 200px/></li>`;
 }, "");
 
-galleryContainer.classList.add('flexed');
+galleryContainer.classList.add('gallery');
+
 galleryContainer.insertAdjacentHTML('afterbegin', string);
 
 
